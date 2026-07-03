@@ -17,8 +17,8 @@ class Venue extends Model
         ];
     }
 
-    public function confrences(): HasMany
+    public function conferences(): HasMany
     {
-        return $this->hasMany(Confrence::class);
+        return $this->hasMany(Conference::class);
     }
 }

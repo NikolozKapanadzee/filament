@@ -1,5 +1,5 @@
 models:
-  Confrence:
+  Conference:
     name: string
     description: string
     start_date: datetime
@@ -16,18 +16,18 @@ models:
     country: string
     postal_code: string
     relationships:
-      hasMany: Confrence
+      hasMany: Conference
   Speaker:
     name: string
     email: string
     bio: text
     twitter_handle: string
     relationships:
-      belongsToMany: Confrence
+      belongsToMany: Conference
   Talk:
     title: string
     abstract: text
     speaker_id: unsignedInteger
     relationships:
       belongsTo: Speaker
-      belongsToMany: Confrence
+      belongsToMany: Conference

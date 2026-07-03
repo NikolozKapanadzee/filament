@@ -24,8 +24,8 @@ class Talk extends Model
         return $this->belongsTo(Speaker::class);
     }
 
-    public function confrences(): BelongsToMany
+    public function conferences(): BelongsToMany
     {
-        return $this->belongsToMany(Confrence::class);
+        return $this->belongsToMany(Conference::class);
     }
 }

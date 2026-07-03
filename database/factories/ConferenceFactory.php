@@ -5,7 +5,7 @@ namespace Database\Factories;
 use App\Models\Venue;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ConfrenceFactory extends Factory
+class ConferenceFactory extends Factory
 {
     /**
      * Define the model's default state.

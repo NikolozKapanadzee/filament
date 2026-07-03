@@ -17,8 +17,8 @@ class Speaker extends Model
         ];
     }
 
-    public function confrences(): BelongsToMany
+    public function conferences(): BelongsToMany
     {
-        return $this->belongsToMany(Confrence::class);
+        return $this->belongsToMany(Conference::class);
     }
 }

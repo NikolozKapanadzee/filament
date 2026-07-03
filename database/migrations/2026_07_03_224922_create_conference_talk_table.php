@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('confrence_talk', function (Blueprint $table) {
-            $table->foreignId('confrence_id');
+        Schema::create('conference_talk', function (Blueprint $table) {
+            $table->foreignId('conference_id');
             $table->foreignId('talk_id');
         });
     }
@@ -22,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('confrence_talk');
+        Schema::dropIfExists('conference_talk');
     }
 };
